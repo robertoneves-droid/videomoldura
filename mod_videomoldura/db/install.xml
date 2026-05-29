@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="mod/videomoldura/db" VERSION="20260529" COMMENT="XMLDB file for Moodle videomoldura">
+  <TABLES>
+    <TABLE NAME="videomoldura" COMMENT="Tabela do plugin de video com moldura">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="course" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="name" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="subtitle" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" COMMENT="Descrição ou nome do professor"/>
+        <FIELD NAME="bordercolor" TYPE="char" LENGTH="7" NOTNULL="true" DEFAULT="#496637" SEQUENCE="false" COMMENT="Cor em formato HEX"/>
+        <FIELD NAME="videourl" TYPE="text" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>
