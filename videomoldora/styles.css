@@ -1,0 +1,36 @@
+.moldura-dispositivo {
+    background-color: #111;
+    border: 15px solid #222;
+    border-radius: 35px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    padding: 10px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 640px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 16 / 9;
+}
+
+/* Detalhe da Câmera frontal */
+.moldura-dispositivo .moldura-camera {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6px;
+    height: 6px;
+    background: #333;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+/* Garante que o iframe ocupe perfeitamente a área interna da moldura */
+.moldura-dispositivo iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px; /* Curvatura suave interna para acompanhar a borda */
+}
