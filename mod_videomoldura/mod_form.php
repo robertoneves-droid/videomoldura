@@ -1,4 +1,19 @@
 <?php
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
 /**
  * The main module configuration form.
  *
@@ -35,8 +50,12 @@ class mod_videomoldura_mod_form extends moodleform_mod {
         $mform->addElement('text', 'subtitle', 'Descrição / Nome do Professor', ['size' => '64']);
         $mform->setType('subtitle', PARAM_TEXT);
 
-        // Campo da Cor e script de injeção.
-        $mform->addElement('text', 'bordercolor', 'Cor da Borda e Título', ['size' => '10', 'maxlength' => '7', 'id' => 'id_bordercolor']);
+        // Campo da Cor e script de injecao.
+        $mform->addElement('text', 'bordercolor', 'Cor da Borda e Título', [
+            'size' => '10',
+            'maxlength' => '7',
+            'id' => 'id_bordercolor',
+        ]);
         $mform->setType('bordercolor', PARAM_TEXT);
         $mform->setDefault('bordercolor', '#496637');
         $mform->addHelpButton('bordercolor', 'bordercolor', 'videomoldura');

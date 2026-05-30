@@ -15,17 +15,29 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version details for videomoldura.
+ * List all videomoldura instances in a course.
  *
  * @package    mod_videomoldura
  * @copyright  2026 Roberto Neves
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
+require_once(__DIR__.'/../../config.php');
 
-$plugin->component = 'mod_videomoldura';
-$plugin->version = 2026052900; // Data atualizada AAAAMMDDXX.
-$plugin->requires = 2025041400; // Versao minima obrigatoria para rodar no Moodle 5.0.
-$plugin->maturity = MATURITY_STABLE;
-$plugin->release = '1.0';
+$id = required_param('id', PARAM_INT); // ID do curso.
+
+$course = $DB->get_record('course', ['id' => $id], '*', MUST_EXIST);
+
+require_course_login($course);
+
+$PAGE->set_url('/mod/videomoldura/index.php', ['id' => $id]);
+$PAGE->set_title($course->fullname);
+$PAGE->set_heading($course->fullname);
+
+echo $OUTPUT->header();
+echo $OUTPUT->heading(get_string('modulenameplural', 'mod_videomoldura'));
+
+// Mensagem simples pois o recurso eh exibido direto na pagina do curso.
+echo $OUTPUT->box('Os vídeos com moldura são exibidos diretamente na página principal do curso.');
+
+echo $OUTPUT->footer();

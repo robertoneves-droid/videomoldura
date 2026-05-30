@@ -15,17 +15,26 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version details for videomoldura.
+ * Upgrade code for the videomoldura module.
  *
  * @package    mod_videomoldura
  * @copyright  2026 Roberto Neves
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
+/**
+ * Execute videomoldura upgrade from the given old version.
+ *
+ * @param int $oldversion Versao anterior do plugin.
+ * @return bool True se atualizado com sucesso.
+ */
+function xmldb_videomoldura_upgrade($oldversion) {
+    global $DB;
 
-$plugin->component = 'mod_videomoldura';
-$plugin->version = 2026052900; // Data atualizada AAAAMMDDXX.
-$plugin->requires = 2025041400; // Versao minima obrigatoria para rodar no Moodle 5.0.
-$plugin->maturity = MATURITY_STABLE;
-$plugin->release = '1.0';
+    $dbman = $DB->get_manager();
+
+    // Moodle exige a existencia deste arquivo para atividades.
+    // Futuras atualizacoes de banco de dados serao colocadas aqui.
+
+    return true;
+}
