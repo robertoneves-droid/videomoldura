@@ -1,17 +1,29 @@
 <?php
+/**
+ * Strings for component 'videomoldura', language 'en'.
+ *
+ * @package    mod_videomoldura
+ * @copyright  2026 Roberto Neves
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
 defined('MOODLE_INTERNAL') || die();
 
+// Plugin names and selectors.
 $string['pluginname'] = 'Video with Frame';
 $string['modulename'] = 'Video with Frame';
 $string['modulenameplural'] = 'Videos with Frame';
 $string['pluginadministration'] = 'Video with Frame administration';
+
+// Capabilities.
 $string['videomoldura:addinstance'] = 'Add a new video with frame';
+
+// Form fields.
 $string['videourl'] = 'Video URL (YouTube)';
 
+// Help text (The "i" icon information window).
 $string['modulename_help'] = '<p>The <b>Video with Frame</b> feature allows teachers and Educational Designers to embed video lessons into their virtual classrooms with a modern, standardized, and responsive design.</p>
-
 <p>Instead of dealing with complex HTML embedding codes, this plugin simplifies the process and displays the media content directly on the course page, encapsulated in an elegant frame that simulates a digital device.</p>
-
 <p><b>Key Features:</b></p>
 <ul>
 <li><b>Simplified Video Insertion:</b> No need to search for the "embed" link. Simply copy and paste the common YouTube link and the plugin automatically converts it.</li>

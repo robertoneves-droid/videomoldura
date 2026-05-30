@@ -1,23 +1,27 @@
 <?php
-defined('MOODLE_INTERNAL') || die();
+/**
+ * Strings for component 'videomoldura', language 'pt_br'.
+ *
+ * @package    mod_videomoldura
+ * @copyright  2026 Roberto Neves
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 
-// Nomes do plugin no sistema e seletores
+// Nomes do plugin no sistema e seletores.
 $string['pluginname'] = 'Vídeo com Moldura';
 $string['modulename'] = 'Vídeo com Moldura';
 $string['modulenameplural'] = 'Vídeos com Moldura';
 $string['pluginadministration'] = 'Administração do Vídeo com Moldura';
 
-// Capacidades (Permissões de sistema)
+// Capacidades (Permissoes de sistema).
 $string['videomoldura:addinstance'] = 'Adicionar um novo vídeo com moldura';
 
-// Textos do formulário
+// Textos do formulario.
 $string['videourl'] = 'URL do Vídeo (YouTube)';
 
-// Texto de ajuda (A janela de informações do ícone "i")
+// Texto de ajuda (A janela de informacoes do icone "i").
 $string['modulename_help'] = '<p>O recurso <b>Vídeo com Moldura</b> permite que professores e Designers Educacionais incorporem videoaulas em suas salas de aula virtuais com um design moderno, padronizado e responsivo.</p>
-
 <p>Em vez de lidar com códigos HTML de incorporação complexos, este plugin simplifica o processo e exibe o conteúdo de mídia diretamente na página do curso, encapsulado em uma moldura elegante que simula um dispositivo digital.</p>
-
 <p><b>Principais funcionalidades:</b></p>
 <ul>
 <li><b>Inserção Simplificada de Vídeos:</b> Não é necessário procurar pelo link de "embed". Basta copiar e colar o link comum do YouTube e o plugin faz a conversão automaticamente.</li>
