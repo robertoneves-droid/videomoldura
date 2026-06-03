@@ -42,12 +42,12 @@ class mod_videomoldura_mod_form extends moodleform_mod {
         $mform = $this->_form;
 
         // Campos padrao (Nome da atividade).
-        $mform->addElement('text', 'name', get_string('pluginname', 'mod_videomoldura'), ['size' => '64']);
+        $mform->addElement('text', 'name', get_string('tituloname', 'mod_videomoldura'), ['size' => '64']);
         $mform->setType('name', PARAM_TEXT);
         $mform->addRule('name', null, 'required', null, 'client');
 
         // Campo de Subtitulo / Descricao.
-        $mform->addElement('text', 'subtitle', 'Descrição / Nome do Professor', ['size' => '64']);
+        $mform->addElement('text', 'subtitle', 'Descrição ou Nome do Professor', ['size' => '64']);
         $mform->setType('subtitle', PARAM_TEXT);
 
         // Campo da Cor e script de injecao.

@@ -29,3 +29,4 @@ $string['pluginadministration'] = 'Administração do Vídeo com Moldura';
 $string['pluginname'] = 'Vídeo com Moldura';
 $string['videomoldura:addinstance'] = 'Adicionar um novo vídeo com moldura';
 $string['videourl'] = 'URL do Vídeo (YouTube)';
+$string['tituloname'] = 'Título do Vídeo';

@@ -29,3 +29,4 @@ $string['pluginadministration'] = 'Video with Frame administration';
 $string['pluginname'] = 'Video with Frame';
 $string['videomoldura:addinstance'] = 'Add a new video with frame';
 $string['videourl'] = 'Video URL (YouTube)';
+$string['tituloname'] = 'Video Title';
