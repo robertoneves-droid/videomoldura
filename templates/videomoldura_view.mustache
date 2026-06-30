@@ -1,0 +1,52 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template mod_videomoldura/videomoldura_view
+
+    Template for rendering a video with a device frame.
+
+    Classes required for this template:
+    * videomoldura-container
+    * moldura-dispositivo
+    * moldura-camera
+
+    Context variables required for this template:
+    * name - string Name of the video resource.
+    * bordercolor - string HEX color code.
+    * embedurl - string Embed URL for the iframe.
+    * subtitle - string (optional) Subtitle text.
+
+    Example context (json):
+    {
+        "name": "Moodle Tutorial",
+        "bordercolor": "#496637",
+        "embedurl": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        "subtitle": "Prof. Roberto Neves"
+    }
+}}
+<div class="videomoldura-container container my-4" style="max-width: 95%; margin: 20px auto; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 2px 15px rgba(0,0,0,0.1); border-top: 10px solid {{bordercolor}};">
+    <header class="text-center mb-4">
+        <h2 style="color: {{bordercolor}}; font-size: 28px; font-weight: bold; text-transform: uppercase; margin: 0 0 10px 0;">{{name}}</h2>
+        {{#subtitle}}
+        <p style="font-size: 1.125rem; margin: 15px 0 0 0; padding-bottom: 20px; border-bottom: 1px solid #eee;">{{subtitle}}</p>
+        {{/subtitle}}
+    </header>
+    <div class="moldura-dispositivo">
+        <div class="moldura-camera"></div>
+        <iframe title="{{name}}" src="{{embedurl}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
