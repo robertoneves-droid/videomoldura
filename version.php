@@ -25,7 +25,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'mod_videomoldura';
-$plugin->version = 2026052901; // Versão incrementada para o Moodle detectar a atualização.
+$plugin->version = 2026081800; // Versão incrementada para o Moodle detectar a atualização.
 $plugin->requires = 2022041900; // Versão mínima obrigatória para rodar a partir do Moodle 4.0.
 $plugin->maturity = MATURITY_STABLE;
-$plugin->release = '1.0';
+$plugin->release = '1.0.1';
