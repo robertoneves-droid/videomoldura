@@ -28,6 +28,7 @@ $string['modulenameplural'] = 'Videos with Frame';
 $string['pluginadministration'] = 'Video with Frame administration';
 $string['pluginname'] = 'Video with Frame';
 $string['videomoldura:addinstance'] = 'Add a new video with frame';
+$string['videomoldura:view'] = 'View video with frame';
 $string['videourl'] = 'Video URL (YouTube)';
 $string['tituloname'] = 'Video Title';
 $string['privacy:metadata'] = 'The video with frame plugin does not store any personal user data.';
