@@ -69,4 +69,4 @@ This plugin was structured to maintain compatibility with the latest stable vers
 ---
 
 ## 👥 Credits
-Developed internally by the **Roberto Sarcinelli Neves** to optimize instructional design workflows.
+Developed by **Roberto Sarcinelli Neves** to optimize instructional design workflows.
