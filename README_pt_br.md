@@ -69,4 +69,4 @@ Este plugin foi estruturado para manter compatibilidade com as versões mais rec
 ---
 
 ## 👥 Créditos
-Desenvolvido internamente pela equipe de **Suporte TI / AVA Moodle da SEAD** para otimização de rotinas de design educacional.
+Desenvolvido por **Roberto Sarcinelli Neves** para otimização de rotinas de design educacional.
